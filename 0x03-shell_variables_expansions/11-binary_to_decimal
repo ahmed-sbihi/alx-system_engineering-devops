@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$BINARY" | tr -d '\n' | awk '{print strtonum("0b" $0)}'
+echo "$((2#${BINARY}))"
